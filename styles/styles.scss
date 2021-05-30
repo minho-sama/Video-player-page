@@ -1,0 +1,61 @@
+
+@import './variables';
+@import './nav';
+@import './scrollbar';
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: $darker;
+}
+
+body, html{
+    height: 100%;
+}
+
+article{
+    margin: 15px;
+    display:flex;
+    flex-direction:row;
+    gap: 10px;
+    height: 100%;
+}
+
+#main-content{
+    flex-basis: 70%;
+    flex-direction: column;
+    border: $testborder;
+    height: 100%;
+    display: inline-block;
+    
+    #video-player{
+        width: 100%;
+        border: $testborder;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        iframe{
+            width:100%;
+            height: 40vw;
+        }
+    }
+    #description{
+        border:$testborder;
+
+    }
+
+    #comment-section{
+        width: 100%;
+        border: $testborder;
+    }
+}
+#recommendations{
+    height: 100%;
+    flex-basis: 30%;
+    flex-direction: column;
+    border: $testborder;
+}
+
