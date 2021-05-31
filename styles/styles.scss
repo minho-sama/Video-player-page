@@ -1,7 +1,8 @@
-
 @import './variables';
 @import './nav';
 @import './scrollbar';
+@import './keyframes';
+@import './sidebar';
 
 *{
     margin: 0;
@@ -26,13 +27,15 @@ article{
 #main-content{
     flex-basis: 70%;
     flex-direction: column;
-    border: $testborder;
+    // border: $testborder;
     height: 100%;
-    display: inline-block;
-    
+    // display: inline-block;
+    // display:flex;
+    // align-items: center;
+
     #video-player{
         width: 100%;
-        border: $testborder;
+        // border: $testborder;
         display:flex;
         flex-direction: column;
         gap:10px;
@@ -43,19 +46,30 @@ article{
         }
     }
     #description{
-        border:$testborder;
+        // border:$testborder;
+        font-size: 14px;
+        header{
+            margin: 5px 0;
+            color:rgb(90, 152, 247);
+        }
+        h1{
+            font-weight:500;
+            font-size: 19px;
+        }
+        p{
+            margin: 7px 0;
+        }
 
+    }
+    hr{
+        border:none;
+        border-top: 0.5px solid rgb(95, 95, 95);
+        width: 98%;
     }
 
     #comment-section{
         width: 100%;
-        border: $testborder;
+        // border: $testborder;
     }
-}
-#recommendations{
-    height: 100%;
-    flex-basis: 30%;
-    flex-direction: column;
-    border: $testborder;
 }
 
