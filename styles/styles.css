@@ -173,6 +173,18 @@ nav .bg-light {
   margin: 3px 0;
 }
 
+@media only screen and (max-width: 900px) {
+  #yt-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .disappear {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -255,5 +267,14 @@ article {
 
 #main-content #comment-section {
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

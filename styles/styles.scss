@@ -1,7 +1,6 @@
 @import './variables';
 @import './nav';
 @import './scrollbar';
-@import './keyframes';
 @import './sidebar';
 
 *{
@@ -27,7 +26,6 @@ article{
 #main-content{
     flex-basis: 70%;
     flex-direction: column;
-    // border: $testborder;
     height: 100%;
     // display: inline-block;
     // display:flex;
@@ -35,7 +33,7 @@ article{
 
     #video-player{
         width: 100%;
-        // border: $testborder;
+
         display:flex;
         flex-direction: column;
         gap:10px;
@@ -46,7 +44,6 @@ article{
         }
     }
     #description{
-        // border:$testborder;
         font-size: 14px;
         header{
             margin: 5px 0;
@@ -69,7 +66,12 @@ article{
 
     #comment-section{
         width: 100%;
-        // border: $testborder;
+
     }
 }
 
+@media only screen and (max-width: 900px){
+    article{
+        flex-direction:column;
+    }
+}
