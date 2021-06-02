@@ -27,12 +27,10 @@ article{
     flex-basis: 70%;
     flex-direction: column;
     height: 100%;
-    // display: inline-block;
-    // display:flex;
-    // align-items: center;
 
     #video-player{
         width: 100%;
+        position:relative;
 
         display:flex;
         flex-direction: column;
@@ -54,10 +52,33 @@ article{
             font-size: 19px;
         }
         p{
-            margin: 7px 0;
+            margin: 7px 0 -10px 0;
         }
 
     }
+
+    #action-buttons{
+        ul{
+            list-style: none;
+            display:flex;
+            gap:20px;
+            // border:$testborder;
+            // align-content: flex-end;
+            position:absolute;
+            bottom:2%;
+            right:3px;
+            li{
+                display:flex;
+                gap:5px;
+                align-items: center;
+                justify-content: center;
+            }
+            li img{
+                cursor:pointer;
+            }
+        }
+    }
+
     hr{
         border:none;
         border-top: 0.5px solid rgb(95, 95, 95);
@@ -73,5 +94,16 @@ article{
 @media only screen and (max-width: 900px){
     article{
         flex-direction:column;
+
+        #description p{
+            margin: 10px 0;
+        }
+
+        #action-buttons{
+            display:none;
+        }
+        hr{
+            margin-top:5px;
+        }
     }
 }
