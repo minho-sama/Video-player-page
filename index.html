@@ -10,6 +10,7 @@
   <link href='https://css.gg/menu-grid-r.css' rel='stylesheet'>
   <meta name="description" content="youtube-clone">
   <meta name="author" content="SitePoint">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="icon" href="media/yt-icon.png">
 
   <link rel="stylesheet" href="styles/styles.css">
@@ -17,7 +18,7 @@
 </head>
     <nav>
         <div id = "nav-left">
-            <i class="material-icons bg-light">menu</i>
+            <i class="material-icons bg-light pointer">menu</i>
             <img class="bg-light" id="yt-logo" src="media/youtube-logo-white.svg" alt="youtube-logo">
         </div>
         <div id = 'searchbar'>
@@ -25,8 +26,8 @@
             <button><i class="material-icons">&#xe8b6;</i></button>
         </div>
         <div id = "nav-right">
-            <i class="gg-menu-grid-r disappear"></i>
-            <i class="material-icons bg-light disappear">notifications</i>
+            <i class="gg-menu-grid-r disappear pointer"></i>
+            <i class="material-icons bg-light disappear pointer">notifications</i>
             <a href="https://github.com/minho-sama" target ="_blank"><img class = "bg-light" id = "profile-pic" src = "media/minho.jpg" alt = "profile pic"></a>
         </div>
     </nav>
@@ -43,33 +44,43 @@
                     <header>#Trending</header>
                     <h1>BTS (방탄소년단) 'Butter' Official MV</h1>
                     <p>273 601 556 views • Premier data: 2021. May 21.</p>
-                </section>
-                <section id = "action-buttons">
-                    <ul>
-                        <li>
-                            <img src = "media/like.svg" alt = "like">
-                            <p>16 M</p>
-                        </li>
-                        <li>
-                            <img src = "media/dislike.svg" alt = "dislike">
-                            <p>171 K</p>
-                        </li>
-                        <li>
-                            <img src = "media/share.svg" alt = "like">
-                            <p>Share</p>
-                        </li>
-                        <li>
-                            <img src = "media/add-playlist.svg" alt = "like">
-                            <p>Save</p>
-                        </li>
-                            <img src = "media/grey-mini-menu.svg" alt = "like">  <li>
-                        </li>
-                    </ul>
+                    <div id = "action-buttons">
+                        <ul>
+                            <li>
+                                <img src = "media/like.svg" alt = "like">
+                                <p>16 M</p>
+                            </li>
+                            <li>
+                                <img src = "media/dislike.svg" alt = "dislike">
+                                <p>171 K</p>
+                            </li>
+                            <li>
+                                <img src = "media/share.svg" alt = "like">
+                                <p>Share</p>
+                            </li>
+                            <li>
+                                <img src = "media/add-playlist.svg" alt = "like">
+                                <p>Save</p>
+                            </li>
+                                <img src = "media/grey-mini-menu.svg" alt = "like">  <li>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <hr>
-            </section>
-            <section id = "comment-section">
-                <p>comments</p>
+                
+                <section id = "channel-info">
+                    <div id = "channel-name">
+                        <img src = "media/hypelabels.jpg" alt = "channel-picture">
+                        <div class = "container">
+                            <p>HYBE LABELS</p>
+                            <p id = "sub-num">57 M subscriber</p>
+                        </div>
+                    </div>
+                    <button id = "more-btn">MORE</button>
+                    <button id = "subscribe-btn">SUBSCRIBE</button>
+                </section>
+                <hr>
             </section>
         </div>
         

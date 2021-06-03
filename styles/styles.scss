@@ -30,8 +30,6 @@ article{
 
     #video-player{
         width: 100%;
-        position:relative;
-
         display:flex;
         flex-direction: column;
         gap:10px;
@@ -42,7 +40,9 @@ article{
         }
     }
     #description{
+        position:relative;
         font-size: 14px;
+        height: 83px;
         header{
             margin: 5px 0;
             color:rgb(90, 152, 247);
@@ -55,26 +55,26 @@ article{
             margin: 7px 0 -10px 0;
         }
 
-    }
-
-    #action-buttons{
-        ul{
-            list-style: none;
-            display:flex;
-            gap:20px;
-            // border:$testborder;
-            // align-content: flex-end;
+        #action-buttons{
             position:absolute;
-            bottom:2%;
-            right:3px;
-            li{
+            right: 0;
+            bottom: 5px;
+            ul{
+                list-style: none;
                 display:flex;
-                gap:5px;
-                align-items: center;
-                justify-content: center;
-            }
-            li img{
-                cursor:pointer;
+                gap:20px;
+                align-content: center;
+                li{
+                    display:flex;
+                    gap:5px;
+                    align-items: center;
+                    p{
+                        margin:auto;
+                    }
+                    img{
+                        cursor:pointer;
+                    }
+                }
             }
         }
     }
@@ -85,9 +85,55 @@ article{
         width: 98%;
     }
 
-    #comment-section{
-        width: 100%;
-
+    #channel-info{
+        position:relative;
+        height: 120px;
+        #channel-name{
+            display:flex;
+            gap: 15px;
+            align-items: center;
+            img{
+                border-radius: 50%;
+                width: 50px;
+            }
+        }
+        #subscribe-btn{
+            position: absolute;
+            top:7px;
+            right: 7px;
+            border:none;
+            border-radius: 2px;
+            background-color: rgb(214, 7, 7);
+            color:white;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            cursor:pointer;
+            padding: 10px 5px;
+            width: 13%;
+        }
+        .container{
+            display:flex;
+            gap: 3px;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 550;
+            align-items: center;
+            #sub-num{
+                font-size: 12px;
+                color: $greytext;
+            }
+        }
+        #more-btn{
+            position:absolute;
+            bottom:0px;
+            left: 60px;
+            border: none;
+            background-color: none;
+            color:$greytext;
+            cursor:pointer;
+        }
     }
 }
 
@@ -105,5 +151,9 @@ article{
         hr{
             margin-top:5px;
         }
+    }
+    #subscribe-btn{
+        font-size: 10px;
+        width: 8%;
     }
 }

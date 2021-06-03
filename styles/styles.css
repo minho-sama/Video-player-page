@@ -99,6 +99,10 @@ nav .bg-light {
   background-color: #313131;
 }
 
+nav .pointer {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 13px;
 }
@@ -223,7 +227,6 @@ article {
 
 #main-content #video-player {
   width: 100%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +246,9 @@ article {
 }
 
 #main-content #description {
+  position: relative;
   font-size: 14px;
+  height: 83px;
 }
 
 #main-content #description header {
@@ -260,18 +265,23 @@ article {
   margin: 7px 0 -10px 0;
 }
 
-#main-content #action-buttons ul {
+#main-content #description #action-buttons {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+
+#main-content #description #action-buttons ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  position: absolute;
-  bottom: 2%;
-  right: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-#main-content #action-buttons ul li {
+#main-content #description #action-buttons ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,12 +289,13 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-#main-content #action-buttons ul li img {
+#main-content #description #action-buttons ul li p {
+  margin: auto;
+}
+
+#main-content #description #action-buttons ul li img {
   cursor: pointer;
 }
 
@@ -294,8 +305,72 @@ article {
   width: 98%;
 }
 
-#main-content #comment-section {
-  width: 100%;
+#main-content #channel-info {
+  position: relative;
+  height: 120px;
+}
+
+#main-content #channel-info #channel-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-content #channel-info #channel-name img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+#main-content #channel-info #subscribe-btn {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  border: none;
+  border-radius: 2px;
+  background-color: #d60707;
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 13%;
+}
+
+#main-content #channel-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  font-weight: 550;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-content #channel-info .container #sub-num {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+#main-content #channel-info #more-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 60px;
+  border: none;
+  background-color: none;
+  color: #bbbbbb;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {
@@ -313,6 +388,10 @@ article {
   }
   article hr {
     margin-top: 5px;
+  }
+  #subscribe-btn {
+    font-size: 10px;
+    width: 8%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
