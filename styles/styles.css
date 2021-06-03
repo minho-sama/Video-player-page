@@ -373,7 +373,7 @@ article {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -390,8 +390,7 @@ article {
     margin-top: 5px;
   }
   #subscribe-btn {
-    font-size: 10px;
-    width: 8%;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
